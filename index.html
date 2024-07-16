@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        background-color: darkgoldenrod;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .z {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .a {
+        width: 300px;
+        height: 100px;
+        background-color: aqua;
+        border-radius: 50px;
+        border-width: 20px;
+        font-size: 50px;
+    }
+
+    .para {
+        text-align: center;
+        font-size: 40px;
+        color: brown;
+    }
+</style>
+
+<body>
+    <h1>String Comparing</h1>
+    <div class="z">
+        <input type="text" class="a" id="input1" onkeyup="text1()">
+        <input type="text" class="a" id="input2" onkeyup="text1()">
+    </div>
+
+    <p class="para" id="paragraph"></p>
+    <script>
+        function text1() {
+            const abc = document.getElementById("input1");
+            const xyz = document.getElementById("input2");
+            const pqr = document.getElementById("paragraph");
+
+            if (abc.value == xyz.value) {
+                pqr.innerText = " Text Match";
+            }
+            else {
+                pqr.innerText = "Text Not Match";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
